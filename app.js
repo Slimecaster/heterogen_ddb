@@ -17,6 +17,9 @@ try{
 
 app.use('/',routes)
 
+//Middleware
+app.use(express.static(path.join(__dirname, 'public')));
+
 app.listen(port, () => {
     console.log(`Server is running at http://localhost:${port}`)
 })
