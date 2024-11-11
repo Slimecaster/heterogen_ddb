@@ -7,7 +7,6 @@ const passuserSchema = new mongoose.Schema({
 
 
 const accountSchema = new mongoose.Schema({
-    username: { type: String, required: true },
     name: { type: String, required: true },
     email: { type: String, required: true }
 })
