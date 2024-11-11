@@ -14,7 +14,6 @@ try{
     console.log('MongoDB Connected');
 } catch(err){ console.error('MongoDB Connection Error', err)}
 
-
 app.use('/',routes)
 
 app.listen(port, () => {
